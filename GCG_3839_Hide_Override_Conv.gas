@@ -1,0 +1,32 @@
+Program.Sub.ScreenSU.Start
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+	F.Intrinsic.Control.Case(17050)
+		Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000064,"HIDE",1)
+		Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000063,"HIDE",1)
+	F.Intrinsic.Control.Case(15020)
+		Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000239,"HIDE",1)
+		Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000093,"HIDE",1)
+	F.Intrinsic.Control.Case(16400)
+		Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000081,"HIDE",1)
+		Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000068,"HIDE",1)
+F.Intrinsic.Control.EndSelect
+
+Program.Sub.Main.End
+
+Program.Sub.Comments.Start
+${$0$}$GCG_Hide_Override_Conv$}$MLA$}$10/23/2012
+${$1$}$$}$$}$2$}$16400$}$Populate Hook$}$10/23/2012 4:01:49 PM$}$(Program: PUR103; Screen: PUS103L)
+
+${$1$}$$}$$}$1$}$15020$}$PO RECEIPTS (PUS100-POPULATE-HOOK)$}$10/23/2012 4:01:35 PM$}$(Program: PUR100GI; Screen: PUS100)
+
+${$1$}$$}$$}$0$}$17050$}$PUS064LN-POPULATE-HOOK (PO LINES)$}$10/23/2012 4:00:01 PM$}$(Program: PUR064GI; Screen: PUS064LN)
+
+Program.Sub.Comments.End
+
